@@ -1,0 +1,120 @@
+.place-cat-list{
+	.btn{
+		margin: 5px 0;
+	}
+	input:not(:checked) + label {
+		background-color: #B3B3B3!important;
+		border-color: #B3B3B3!important;
+	}
+	input{
+		display:none;
+	}
+	.blue{
+		color: #fff;
+		background-color: #1E98FF;
+		border-color: #1E98FF;
+	}
+	.darkGreen{
+		color: #fff;
+		background-color: #BD130A;
+		border-color: #BD130A;
+	}
+	.red{
+		color: #fff;
+		background-color: #ED4543;
+		border-color: #ED4543;
+	}
+	.violet{
+		color: #fff;
+		background-color: #B51EFF;
+		border-color: #B51EFF;
+	}
+	.darkOrange{
+		color: #fff;
+		background-color: #E6761B;
+		border-color: #E6761B;
+	}
+	.black{
+		color: #fff;
+		background-color: #595959;
+		border-color: #595959;
+	}
+	.night{
+		color: #fff;
+		background-color: #0E4779;
+		border-color: #0E4779;
+	}
+	.yellow{
+		color: #fff;
+		background-color: #FFD21E;
+		border-color: #FFD21E;
+	}
+	.darkBlue{
+		color: #fff;
+		background-color: #177BC9;
+		border-color: #177BC9;
+	}
+	.green{
+		color: #fff;
+		background-color: #56DB40;
+		border-color: #56DB40;
+	}
+	.pink{
+		color: #fff;
+		background-color: #F371D1;
+		border-color: #F371D1;
+	}
+	.orange{
+		color: #fff;
+		background-color: #FF931E;
+		border-color: #FF931E;
+	}
+	.gray{
+		color: #fff;
+		background-color: #B3B3B3;
+		border-color: #B3B3B3;
+	}
+	.lightBlue{
+		color: #fff;
+		background-color: #82CDFF;
+		border-color: #82CDFF;
+	}
+	.brown{
+		color: #fff;
+		background-color: #9D7E03;
+		border-color: #9D7E03;
+	}
+	.olive{
+		color: #fff;
+		background-color: #97A100;
+		border-color: #97A100;
+	}
+}
+.single-place{
+	.jumbotron{
+		font-size: 17px;
+		font-weight: 200;
+		
+		p{
+			font-size: 17px;
+			font-weight: 200;
+		}
+	}
+	#reviews {
+		.media-body > .answer {
+			display:none;
+		}
+		.media-body > .in {
+			display:block;
+		}
+		
+		.comment-content{
+			.rating {
+				i.fa{
+					color: #FFD700;
+				}
+			}
+		}
+		
+	}
+}

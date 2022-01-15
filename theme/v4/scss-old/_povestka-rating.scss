@@ -1,0 +1,206 @@
+body.rating{
+
+	.cover-container {
+		min-height: 500px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		margin-bottom: 24px;
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://povestka.by/wp-content/themes/stable/img-old/rating.jpg') no-repeat bottom center;
+		-moz-background-size: 100%;
+		-webkit-background-size: 100%;
+		-background-size: 100%;
+		background-size: 100%;
+
+		main {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			color: #fff;
+			margin: 100px auto;
+			max-width: 900px;
+
+			.btn-lg {
+				padding: .75rem 1.25rem;
+				font-weight: 700;
+			}
+
+			.btn-secondary {
+				color: #333;
+				text-shadow: none;
+				background-color: #fff;
+				border: .05rem solid #fff;
+				margin-bottom: 10px;
+
+				&:hover, &:focus {
+					color: #333;
+					text-shadow: none;
+					background-color: #fff;
+					border: .05rem solid #fff;
+				}
+			}
+		}
+	}
+
+	/* https://codepen.io/jstneg/pen/EVKYZj */
+	.card {
+		background-color: #fff;
+		border: 1px solid transparent;
+		border-radius: 6px;
+
+		.card-img {
+			position: relative;
+			padding: 0;
+			display: table;
+		}
+
+		.card-body {
+			display: table;
+			width: 100%;
+			padding: 12px;
+
+			.lead {
+				text-align: center;
+			}
+			.rating {
+				i.far, i.fas{
+					color: #FFD700;
+				}
+			}
+			
+		}
+	}
+
+	.card-price {
+		border-color: #999;
+		background-color: #ededed;
+		margin-bottom: 24px;
+
+		> .card-img:first-child img {
+			border-radius: 6px 6px 0 0;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		table .note {
+			color: #666;
+			font-size: 0.8em;
+		}
+
+		.buy-now {
+			text-transform: uppercase;
+
+			@media (max-width: $screen-xs-max) { font-size: 16px; }
+			@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+				font-size: 13px;
+				padding: 10px 3px;
+				border-radius: 3px;
+			}
+			@media (min-width: $screen-md-min) { font-size: 16px; }
+
+		}
+	}
+
+	textarea {
+		resize: vertical;
+	}
+
+	.starrating .rating {
+		border: none;
+		float: left;
+
+		> {
+			input {
+				display: none;
+			}
+
+			label:before {
+				margin: 5px;
+				font-size: 3em;
+				font-family: 'Font Awesome 5 Free';
+				display: inline-block;
+				content: "\f005";
+			}
+
+			.half:before {
+				content: "\f089";
+				position: absolute;
+			}
+
+			label {
+				color: #ddd;
+				float: right;
+			}
+
+			input:checked ~ label {
+				color: #FFD700;
+			}
+		}
+
+		&:not(:checked) > label:hover {
+			color: #FFD700;
+
+			~ label {
+				color: #FFD700;
+			}
+		}
+
+		> {
+			input:checked {
+				+ label:hover, ~ label:hover {
+					color: #FFED85;
+				}
+			}
+
+			label:hover ~ input:checked ~ label, input:checked ~ label:hover ~ label {
+				color: #FFED85;
+			}
+		}
+	}
+	.carousel-inner {
+		
+		.item {
+						
+			&.left.active {
+				@media (max-width: $screen-xs-max) { transform: translateX(-100%); }
+				@media (min-width: $screen-sm-min) { transform: translateX(-33%); }
+			}
+
+			&.right.active, &.next {
+				@media (max-width: $screen-xs-max) { transform: translateX(100%); }
+				@media (min-width: $screen-sm-min) { transform: translateX(33%); }
+			}
+
+			&.prev {
+				@media (max-width: $screen-xs-max) { transform: translateX(-100%); }
+				@media (min-width: $screen-sm-min) { transform: translateX(-33%); }
+			}
+
+			&.right, &.left {
+				@media (max-width: $screen-xs-max) { transform: translateX(0); }
+				@media (min-width: $screen-sm-min) { transform: translateX(0); }
+			}
+		}
+	}
+
+	.carousel-control {
+		width: 10%;
+	}
+	.in-org, .in-comment, .in-rating{
+		color:red;
+		display:none;
+	}
+
+}

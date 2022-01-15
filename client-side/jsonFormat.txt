@@ -1,0 +1,46 @@
+{
+	height: 200, //высота модуля
+	width: 300, //ширина модуля
+	releaseUrl: "https://github.com/diglabby/doika_1.2", // ссылка на версию
+
+	backgroundColor: "#e7eef4", //Колер фона модуля
+	buttonColor: "#94c840", //Колер кнопак з сумамі
+
+	"show_banner": 1, //Паказваць банэр
+	"color_banner_background": "#f6f4f3", //Колер фону банэра
+	"color_banner_help_background": "#f26443", //Колер кнопкі "Дапамагчы"
+	"color_banner_help_text": "#31383e", //Колер тэкста "Дапамагчы"
+
+	titleTextColor: "black", //цвет шрифта заголовка
+	titleFontSize: "18px", //размер шрифта заголовка
+
+	descriptionTextColor: "black", //цвет шрифта описания
+	descriptionFontSize: "18px", //размер шрифта заголовка
+
+	buttonTextColor: "white", //цвет шрифта на кнопках
+	buttonFontSize: "18px", //размер шрифта заголовка
+	
+		
+	сurrency: "руб.", //валюта
+	
+	currentFunds: 250, //собрано на данный момент средств, число
+	expectedFunds: 1100, //необходимо собрать средств, число	
+	
+	minDonateAmount: 1, //минимальная сумма доната
+	maxDonateAmount: 200, //максимальная сумма доната	
+	
+	innerText: {
+		locale: "by", // язык текста
+		titleImage: "http://path", //путь до главного изображения, строка
+		campaignTitle: "Title", //Заголовок компании, строка
+		campaignDescription: "Description", //Описание компании, строка
+		acceptButtonText: "Дапамагчы", //текст на кнопке отправки
+		resultsText: "Сабрана <span class="summ__highlight">250</span> з <span class="goal__highlight">300</span>", //текст, показывающий, сколько собрано, разметка упростит стилизацию
+		textInputPlaceholder: "Іншая сумма", //текст плейсхолдера в поле ввода суммы
+		paymentDescriptionTitle: "Описание способов оплаты", //текст самой ссылки
+		paymentDescriptionText: "Текст в окне описания способов оплаты",
+		successfulPaymentMessage: "Текст при удачном платеже",
+		errorPaymentMessage: "Текст при неудачном платеже"
+	}
+
+}

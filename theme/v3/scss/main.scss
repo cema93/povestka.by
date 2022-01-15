@@ -1,0 +1,37 @@
+/*colors*/
+$p-green: #4db44d;
+$p-gray: #696969;
+
+
+$icomoon-font-path: "../fonts";
+$fa-font-path:        "../fonts";
+$grid-gutter-width: 10px;
+$font-size-base: 14px;
+$blockquote-font-size: $font-size-base;
+
+$body-bg:               #fbfafa;
+$text-color:            $p-gray;
+$brand-primary:			$p-green;
+
+$badge-bg:              $p-green;
+
+
+
+@import "bootstrap/bootstrap-povestka";
+@import "wordpress";
+@import "buddypress/sass/buddypress";
+
+@import "anspress/main";
+@import "anspress/fonts";
+@import "font-awesome/font-awesome";
+@import "bootstrap-social/_bootstrap-social";
+@import "wordpress-social-login/style";
+
+@import "povestka";
+@import "povestka-place";
+@import "povestka-rating";
+@import "comments";
+
+@import "bootstrap-datepicker/bootstrap-datepicker3.min";
+@import "site-yandex";
+@import "doika/banner";
